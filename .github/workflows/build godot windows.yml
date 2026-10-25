@@ -39,7 +39,7 @@ jobs:
         id: godot-secure
         uses: emabrey/GodotSecureAction@v2
         with:
-          godot-version:  '4.6-stable'
+          godot-version:  '4.7.2-stable'
           algorithm:      aes              # aes · camellia · aria — pick one, use it everywhere
           encryption-key: ${{ secrets.GODOT_ENCRYPTION_KEY }}
           security-token: ${{ needs.setup.outputs.security-token }}
